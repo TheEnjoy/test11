@@ -20,17 +20,19 @@ namespace WindowsFormsApplication3
     {
         string nameOfCandidate;
         public Candidate_Properties properties;
-
+        
         public Candidate()
         {
             NameOfCandidate = "";
             Properties = new Candidate_Properties();
+            Preference = new Firms_Properties();
         }
 
-        public Candidate(string nameOfCandidate, Candidate_Properties proper)
+        public Candidate(string nameOfCandidate, Candidate_Properties proper, Firms_Properties preference)
         {
             NameOfCandidate = nameOfCandidate;
             Properties = proper;
+            Preference = preference;
         }
 
         public string NameOfCandidate
@@ -42,6 +44,11 @@ namespace WindowsFormsApplication3
         {
             get { return Properties; }
             set { value = Properties; }
+        }
+        public Firms_Properties Preference
+        {
+            get { return Preference; }
+            set { value = Preference; }
         }
     }
 
