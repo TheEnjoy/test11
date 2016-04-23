@@ -65,7 +65,7 @@ namespace WindowsFormsApplication3
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
-            //if (((radioButton2.Checked == true) ||  ((radioButton1.Checked == true))))
+        
 
             for (int i = progressBar1.Minimum; i < progressBar1.Maximum; i++)
             {
