@@ -16,7 +16,7 @@ namespace WindowsFormsApplication3
         Small = -1
     }
 
-    class Firm
+    public class Firm
     #region начало Firm
     {
         //public Firms_Properties Properties;

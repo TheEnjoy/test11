@@ -48,6 +48,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -74,21 +75,22 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(168, 335);
+            this.button1.Location = new System.Drawing.Point(157, 391);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(500, 45);
             this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(350, 38);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(75, 17);
+            this.checkBox1.Size = new System.Drawing.Size(87, 17);
             this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "HardWork";
+            this.checkBox1.Text = "HardWork(1)";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -96,9 +98,9 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(350, 72);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(53, 17);
+            this.checkBox2.Size = new System.Drawing.Size(68, 17);
             this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Smog";
+            this.checkBox2.Text = "Smog(-1)";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -106,9 +108,9 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(350, 106);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(57, 17);
+            this.checkBox3.Size = new System.Drawing.Size(69, 17);
             this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "Strong";
+            this.checkBox3.Text = "Strong(1)";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox4
@@ -116,9 +118,9 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(350, 140);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(51, 17);
+            this.checkBox4.Size = new System.Drawing.Size(66, 17);
             this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "Small";
+            this.checkBox4.Text = "Small(-1)";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -223,7 +225,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(616, -1);
+            this.label5.Location = new System.Drawing.Point(601, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 17;
@@ -249,11 +251,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(157, 362);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(500, 23);
+            this.progressBar1.TabIndex = 20;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(835, 440);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.checkBox5);
             this.Controls.Add(this.checkBox6);
@@ -305,5 +316,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

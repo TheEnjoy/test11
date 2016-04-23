@@ -16,7 +16,7 @@ namespace WindowsFormsApplication3
     }
 
 
-    class Candidate
+    public class Candidate
     {
         string nameOfCandidate;
         private Candidate_Properties properties;
