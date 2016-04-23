@@ -19,8 +19,8 @@ namespace WindowsFormsApplication3
     class Candidate
     {
         string nameOfCandidate;
-        public Candidate_Properties properties;
-        
+        private Candidate_Properties properties;
+        private Firms_Properties preference;
         public Candidate()
         {
             NameOfCandidate = "";
@@ -28,27 +28,34 @@ namespace WindowsFormsApplication3
             Preference = new Firms_Properties();
         }
 
-        public Candidate(string nameOfCandidate, Candidate_Properties proper, Firms_Properties preference)
+        public Candidate(string nameOfCandidate)
+        {
+            NameOfCandidate = nameOfCandidate;
+            Properties = new Candidate_Properties();
+            Preference = new Firms_Properties();
+        }
+
+        public Candidate(string nameOfCandidate, Candidate_Properties proper, Firms_Properties pref)
         {
             NameOfCandidate = nameOfCandidate;
             Properties = proper;
-            Preference = preference;
+            Preference = pref;
         }
 
         public string NameOfCandidate
         {
-            get { return NameOfCandidate; }
-            set { value = NameOfCandidate; }
+            get { return nameOfCandidate; }
+            set { value = nameOfCandidate; }
         }
         public Candidate_Properties Properties
         {
-            get { return Properties; }
-            set { value = Properties; }
+            get { return properties; }
+            set { value = properties; }
         }
         public Firms_Properties Preference
         {
-            get { return Preference; }
-            set { value = Preference; }
+            get { return preference; }
+            set { value = preference; }
         }
     }
 

@@ -36,16 +36,26 @@ namespace WindowsFormsApplication3
 
         private string nameOfFirm;
         public Firms_Properties properties;
+        private Candidate_Properties preference;
 
         public Firm()
         {
             NameOfFirm = "";
             Properties = new Firms_Properties();
+            Preference = new Candidate_Properties();
         }
-        public Firm(string nameofFirm, Firms_Properties proper)
+
+        public Firm(string nameofFirm)
         {
-            NameOfFirm = nameOfFirm;
+            NameOfFirm = nameofFirm;
+            Properties = new Firms_Properties();
+            Preference = new Candidate_Properties();
+        }
+        public Firm(string nameofFirm, Firms_Properties proper , Candidate_Properties pref)
+        {
+            NameOfFirm = nameofFirm;
             Properties = proper;
+            Preference = pref;
         }
         public string NameOfFirm
             {
@@ -57,7 +67,11 @@ namespace WindowsFormsApplication3
             get { return properties; }
             set { properties = value; }
         }
-
+        public Candidate_Properties Preference
+        {
+            get { return preference; }
+            set { value = preference; }
+        }
 
     }
 
